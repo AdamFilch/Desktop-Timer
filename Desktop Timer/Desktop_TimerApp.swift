@@ -13,5 +13,6 @@ struct Desktop_TimerApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowResizability(.automatic)
     }
 }
