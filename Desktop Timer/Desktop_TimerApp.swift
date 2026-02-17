@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Desktop_TimerApp: App {
+    
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().navigationTitle("")
         }
         .windowResizability(.automatic)
     }

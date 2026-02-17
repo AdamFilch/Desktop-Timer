@@ -8,10 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var inputState: String = ""
+    
     var body: some View {
-        VStack {
-            Timer()
+        NavigationStack {
+            VStack {
+                Timer()
+            }
+            
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    TextField("15m Break Time ", text: $inputState)
+                }
+                ToolbarItem() {
+                    Button(action: {
+                        
+                    }) {
+                        Image(systemName: "pin.fill")
+                    }.help("Pin this to the top")
+                }
+                ToolbarItem() {
+                    Button(action: {
+                        
+                    }) {
+                        Image(systemName: "gearshape.fill")
+                    }.help("Open Settings")
+                }
+            }
+            
+            
         }
+        
         .padding().frame(minWidth: 500, minHeight: 500)
     }
 }
