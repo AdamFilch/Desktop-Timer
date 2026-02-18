@@ -16,30 +16,8 @@ struct ContentView: View {
             VStack {
                 Timer()
             }
-            
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    TextField("15m Break Time ", text: $inputState)
-                }
-                ToolbarItem() {
-                    Button(action: {
-                        
-                    }) {
-                        Image(systemName: "pin.fill")
-                    }.help("Pin this to the top")
-                }
-                ToolbarItem() {
-                    Button(action: {
-                        
-                    }) {
-                        Image(systemName: "gearshape.fill")
-                    }.help("Open Settings")
-                }
-            }
-            
-            
+            .Topbar()
         }
-        
         .padding().frame(minWidth: 500, minHeight: 500)
     }
 }
