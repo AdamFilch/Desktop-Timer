@@ -13,6 +13,7 @@ struct TopbarInputField: ToolbarContent {
     var body: some ToolbarContent {
         ToolbarItem(placement: .principal) {
             TextField("15m Break Time ", text: $inputState)
+                .textFieldStyle(.roundedBorder)
         }
     }
 }

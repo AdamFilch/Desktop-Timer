@@ -9,8 +9,6 @@ import SwiftUI
 
 struct TopbarModifier: ViewModifier  {
     @State var inputState: String = ""
-    
-    
     func body(content: Content) -> some View {
         content.toolbar {
             TopbarInputField()

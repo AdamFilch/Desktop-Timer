@@ -12,13 +12,11 @@ struct ContentView: View {
     @State private var inputState: String = ""
     
     var body: some View {
-        NavigationStack {
-            VStack {
-                Timer()
-            }
-            .Topbar()
+        VStack {
+            Timer()
         }
-        .padding().frame(minWidth: 500, minHeight: 500)
+        .Topbar()
+        .frame(minWidth: 500, minHeight: 500)
     }
 }
 

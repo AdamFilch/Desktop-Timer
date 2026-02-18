@@ -16,5 +16,6 @@ struct Desktop_TimerApp: App {
             ContentView().navigationTitle("")
         }
         .windowResizability(.automatic)
+        .windowToolbarStyle(.unifiedCompact)
     }
 }

@@ -9,20 +9,23 @@ import SwiftUI
 
 struct QuickButtons: ToolbarContent {
     var body: some ToolbarContent {
-        ToolbarItem() {
-            Button(action: {
+        ToolbarItemGroup(placement: .primaryAction) {
+            Button{
                 
-            }) {
+            } label: {
                 Image(systemName: "pin.fill")
-            }.help("Pin this to the top")
-        }
-        ToolbarItem() {
-            Button(action: {
-                
-            }) {
-                Image(systemName: "gearshape.fill")
-            }.help("Open Settings")
+            }
+            .buttonStyle(.bordered)
+            .help("Pin this to the top")
             
+            
+            Button{
+                
+            } label: {
+                Image(systemName: "gearshape.fill")
+            }
+            .buttonStyle(.bordered)
+            .help("Open Settings")
         }
     }
 }
