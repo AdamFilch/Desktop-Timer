@@ -16,7 +16,8 @@ struct ContentView: View {
             Timer()
         }
         .Topbar()
-        .frame(minWidth: 400, minHeight: 250)
+        .toolbar(removing: .title)
+        .frame(minWidth: 500, minHeight: 250)
     }
 }
 

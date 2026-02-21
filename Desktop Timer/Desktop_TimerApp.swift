@@ -13,7 +13,7 @@ struct Desktop_TimerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView().navigationTitle("")
+            ContentView()
         }
         .windowResizability(.automatic)
         .windowToolbarStyle(.unifiedCompact)

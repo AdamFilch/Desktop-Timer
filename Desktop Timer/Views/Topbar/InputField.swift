@@ -11,9 +11,15 @@ struct TopbarInputField: ToolbarContent {
     @State var inputState: String = ""
     
     var body: some ToolbarContent {
-        ToolbarItem(placement: .principal) {
-            TextField("15m Break Time ", text: $inputState)
-                .textFieldStyle(.roundedBorder)
-        }
+        ToolbarItemGroup(placement: .principal) {
+//                    Spacer(minLength: 0)
+
+                    TextField("15m Break Time", text: $inputState)
+                        .textFieldStyle(.roundedBorder)
+                        .frame(minWidth: 300, maxWidth: 500)
+                        .layoutPriority(1)
+
+//                    Spacer(minLength: 0)
+                }
     }
 }
